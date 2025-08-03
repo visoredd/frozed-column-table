@@ -1,4 +1,3 @@
-/* Scroll wrapper */
 .table-wrapper {
   width: 100%;
   height: 500px;
@@ -8,7 +7,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Table base styles */
 .custom-table {
   border-collapse: collapse;
   width: max-content;
@@ -17,7 +15,6 @@
   font-size: 14px;
 }
 
-/* Header styling */
 th {
   position: sticky;
   top: 0;
@@ -30,7 +27,6 @@ th {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Cell styling */
 .cell {
   padding: 10px 16px;
   width: 100px;
@@ -43,25 +39,21 @@ th {
   transition: background 0.2s ease;
 }
 
-/* Alternate row colors */
 tbody tr:nth-child(even) .cell {
   background: #fafafa;
 }
 
-/* Hover effect */
 tbody tr:hover .cell {
   background: #eef6ff;
 }
 
-/* Common sticky column style */
 .sticky-col {
   position: sticky;
-  background: #fff3e0; /* unified light orange */
+  background: #fff3e0;
   z-index: 4;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
-/* Left sticky columns */
 .left-0 {
   left: 0;
 }
@@ -69,7 +61,6 @@ tbody tr:hover .cell {
   left: 100px;
 }
 
-/* Right sticky columns */
 .right-1 {
   right: 100px;
 }
@@ -77,7 +68,6 @@ tbody tr:hover .cell {
   right: 0;
 }
 
-/* Sticky column cells inside tbody */
 tbody .sticky-col {
   z-index: 2;
 }
