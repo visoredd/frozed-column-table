@@ -1,0 +1,83 @@
+/* Scroll wrapper */
+.table-wrapper {
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table base styles */
+.custom-table {
+  border-collapse: collapse;
+  width: max-content;
+  min-width: 100%;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+}
+
+/* Header styling */
+th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #999;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Cell styling */
+.cell {
+  padding: 10px 16px;
+  width: 100px;
+  min-width: 100px;
+  border: 1px solid #e0e0e0;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: white;
+  color: #444;
+  transition: background 0.2s ease;
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(even) .cell {
+  background: #fafafa;
+}
+
+/* Hover effect */
+tbody tr:hover .cell {
+  background: #eef6ff;
+}
+
+/* Common sticky column style */
+.sticky-col {
+  position: sticky;
+  background: #fff3e0; /* unified light orange */
+  z-index: 4;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Left sticky columns */
+.left-0 {
+  left: 0;
+}
+.left-1 {
+  left: 100px;
+}
+
+/* Right sticky columns */
+.right-1 {
+  right: 100px;
+}
+.right-0 {
+  right: 0;
+}
+
+/* Sticky column cells inside tbody */
+tbody .sticky-col {
+  z-index: 2;
+}
